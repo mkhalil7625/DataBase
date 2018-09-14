@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="my_first_db.sqlite [2]">
+  <database-model serializer="dbm" rdbms="SQLITE" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="3" parent="2" name="my_table_1"/>
+    <table id="4" parent="2" name="my_table_2"/>
+    <column id="5" parent="3" name="my_1st_column">
+      <Position>1</Position>
+      <DataType>INTEGER(0,-1)|4</DataType>
+    </column>
+    <column id="6" parent="4" name="my_1st_column">
+      <Position>1</Position>
+      <DataType>INTEGER(0,-1)|4</DataType>
+    </column>
+    <column id="7" parent="4" name="my_2nd_column">
+      <Position>2</Position>
+      <DataType>TEXT(0,-1)|12</DataType>
+    </column>
+    <column id="8" parent="4" name="my_3nd_column">
+      <Position>3</Position>
+      <DataType>TEXT(0,-1)|12</DataType>
+      <DefaultExpression>&apos;Hello World&apos;</DefaultExpression>
+    </column>
+    <column id="9" parent="4" name="unique_names">
+      <Position>4</Position>
+      <DataType>TEXT(0,-1)|12</DataType>
+    </column>
+    <key id="10" parent="4">
+      <ColNames>my_1st_column</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
